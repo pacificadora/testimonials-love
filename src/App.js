@@ -1,7 +1,17 @@
 import React from "react";
+import reviews from './data'
+import Testimonials from "./components/Testimonials.js";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+       <div>
+        <h1>Our Testimonials</h1>
+        <div></div>
+        <Testimonials reviews={reviews}></Testimonials>
+       </div>
+    </div>
+  );
 };
 
 export default App;
